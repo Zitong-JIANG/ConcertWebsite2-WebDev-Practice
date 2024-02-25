@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>JS assignment</title>
+
+    <!-- Resources -->
+    <!-- Normalize css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+    />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- custom fancy header -->
+    <header>
+      <ul>
+        <li><i class="fa-solid fa-globe"></i> Language</li>
+        <li>Sign in</li>
+        <li>Sign up</li>
+      </ul>
+
+      <h1>Explore<br />your next<br />theatre trip</h1>
+      <div id="searchBar">
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span id="long">Shows</span>
+        </div>
+        <div>
+          <i class="fa-regular fa-calendar"></i>
+          <span>date</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-masks-theater"></i>
+          <select class ="type">
+            <option class = "C">Comedies</option>
+            <option class = "M">Musicals</option>
+            <option class = "P">Plays</option>
+          </select>
+        </div>
+        <div>
+          <span>Rechercher</span>
+        </div>
+      </div> 
+    </header>
+
+    <!-- add some content here -->
+    <div id="comedies-container"></div>
+    <div id="musicals-container"></div>
+    <div id="plays-container"></div>
+
+    <!-- script loading -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
