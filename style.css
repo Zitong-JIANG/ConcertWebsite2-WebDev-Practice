@@ -1,0 +1,167 @@
+/* GLOBAL CSS PROPERTIES */
+/* variables but in css */
+:root {
+  --highlight: #47b5ff;
+  --light: #dff6ff;
+  --dark: #256d85;
+  --darker: #06283d;
+
+  --comedies: #e9d5da;
+  --plays: #c8b6e2;
+  --musicals: #f5cdaa;
+}
+
+* {
+  font-family: "Roboto", serif;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--darker);
+}
+
+/* ##################################
+########## HEADER STYLE #############
+################################## */
+header {
+  width: 100vw;
+  height: 80vh;
+
+  background-size: cover;
+  background-position: 0% 40%;
+  background-image: url("https://images.pexels.com/photos/46158/ballet-ballerina-performance-don-quixote-46158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  color: var(--light);
+}
+
+/* header menu */
+header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin: 0;
+  padding-top: 2em;
+}
+
+header ul li {
+  padding-right: 3em;
+}
+
+header ul li:last-of-type {
+  padding: 0.5em 2em;
+  margin-right: 3em;
+  background-color: var(--dark);
+  border-radius: 0.5em;
+}
+
+/* header title */
+header h1 {
+  font-family: "Lora", serif;
+  margin-right: 20%;
+  font-size: 5em;
+
+  background: #256d85;
+  background: linear-gradient(to top right, #256d85 100%, #3aabd1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* header searchbar */
+header #searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1em auto;
+  padding: 1em 2em;
+  border-radius: 0.5em;
+
+  background-color: var(--light);
+  color: var(--darker);
+}
+
+header #searchBar div {
+  margin: 0em 2em;
+  padding: 0.5em 0em;
+  border-bottom: solid;
+}
+
+header #searchBar div:last-of-type {
+  background-color: var(--darker);
+  color: var(--light);
+
+  padding: 1em 1.5em;
+  border-radius: 1vw;
+}
+
+header #searchBar div span {
+  padding-left: 0.5em;
+  padding-right: 1em;
+}
+
+header #searchBar div span#long {
+  display: inline-block;
+  width: 15vw;
+}
+
+/* ##################################
+####### END OF HEADER STYLE #########
+################################## */
+
+#musicals-container{
+  max-width: 100vw; 
+  width: 80vw;
+  margin: auto;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.card{
+  height: 625px;
+  width: 300px;
+  margin-top: 4em;
+  background-color: #2B5F75;
+  padding: 1em;
+  border-radius: .5em;
+}
+
+.card h2 {
+  font-weight: 700;
+  color: white;
+  word-wrap: normal|break-word; 
+}
+
+.card img{
+  width: 100%;
+  object-fit:fill;
+}
+
+.card-info{
+  padding-bottom: .5em;
+  border-bottom: solid;
+  color: white;
+}
+
+.card input{
+  border-width: 0px !important;
+}
+
+.ui-button{
+  color: white;
+}
+
+form select{
+  
+}
+
+
